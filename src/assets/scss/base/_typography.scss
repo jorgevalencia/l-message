@@ -1,0 +1,51 @@
+/* Typography */
+html {
+    color: $c-dark;
+    font-family: $t-fallback;
+    font-size: $base-font-size;
+    font-weight: 300;
+    line-height: $base-line-height;
+
+    &.fonts-loaded { font-family: $t-default; }
+}
+
+/* Headings */
+h1, .t-h1,
+h2, .t-h2,
+h3, .t-h3,
+h4, .t-h4,
+h5, .t-h5,
+h6, .t-h6 {
+    font-family: $t-fallback;
+    font-weight: 700;
+
+    .fonts-loaded & { font-family: $t-default; }
+}
+
+h1, .t-h1 { @include fluid-type(34px, 95px); }
+
+h2, .t-h2 { @include fluid-type(28px, 63px); }
+
+h3, .t-h3 { @include fluid-type(24px, 42px); }
+
+h4, .t-h4 { @include fluid-type(20px, 31px); }
+
+h5, .t-h5 { @include fluid-type($global-min-font, $global-max-font); }
+
+h6, .t-h6 { @include fluid-type(14px, 18px); }
+
+b, strong { font-weight: 700; }
+
+.italic { font-style: italic; }
+
+p {
+    @include fluid-type($global-min-font, $global-max-font);
+
+    margin: 0 0 space();
+}
+
+a {
+    color: $c-main;
+    cursor: pointer;
+    text-decoration: none;
+}

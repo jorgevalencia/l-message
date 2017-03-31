@@ -1,0 +1,22 @@
+.Header {
+    padding: space() 0;
+
+    .Header-logo {
+        svg {
+            max-height: 80px;
+
+            path { fill: $c-main; }
+        }
+    }
+
+    .Header-language {
+        li {
+            display: inline-block;
+            padding-right: 5px;
+
+            &:last-child { padding-right: 0; }
+
+            span { font-weight: bold; }
+        }
+    }
+}
