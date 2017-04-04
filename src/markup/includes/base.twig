@@ -8,43 +8,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% include 'helpers/fonts.html.twig' %}
+        {% include '../helpers/fonts.twig' %}
 
         {% block metas %}
-            {% include 'organisms/metas.html.twig' %}
+            {% include '../organisms/metas.twig' %}
         {% endblock %}
 
         {% block alternate_links %}
-            {% include 'molecules/alternate_links.html.twig' %}
+            {% include '../molecules/alternate_links.twig' %}
         {% endblock %}
 
-        {% include 'molecules/favicon.html.twig' %}
+        {% include '../molecules/favicon.twig' %}
 
         {% block crp %}
-            {% include 'crp-styles/default.html.twig' %}
+            {% include '../crp-styles/default.twig' %}
         {% endblock %}
+
     </head>
     <body>
         <div style="height: 0; width: 0; position: absolute; top: -99999px; visibility: hidden">
-            {% include 'svg/sprites.svg' %}
+            {% include '../svg/sprites.svg' %}
         </div>
 
-        {% include 'organisms/cookies.html.twig' %}
+        {% include '../organisms/cookies.twig' %}
 
         {% block header %}
-            {% include 'organisms/header.html.twig' %}
-        {% endblock %}
-        {% block body %}{% endblock %}
-        {% block footer %}
-            {% include 'organisms/footer.html.twig' %}
+            {% include '../organisms/header.twig' %}
         {% endblock %}
 
-        <link rel="stylesheet" href="{{ asset('assets/css/styles.min.css') }}" />
+        {% block body %}{% endblock %}
+
+        {% block footer %}
+            {% include '../organisms/footer.twig' %}
+        {% endblock %}
+
+        <link rel="stylesheet" href="assets/css/styles.min.css" />
+
         {% block styles %}{% endblock %}
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="{{ asset('assets/js/app.min.js') }}" async defer></script>
+
+        <script src="assets/js/app.min.js" async defer></script>
+
         {% block scripts %}{% endblock %}
 
-        {% include 'development.html.twig' %}
+        {% include '../development.twig' %}
     </body>
 </html>

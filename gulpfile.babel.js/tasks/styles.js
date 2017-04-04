@@ -87,7 +87,7 @@ gulp.task('styles:inline', ['styles:crp'], () => {
                     let content = fs.readFileSync(routes.tmp + '/' + filename + '.css', 'utf8');
                     let styles = '<style type="text/css">\n' + content + '\n</style>';
 
-                    fs.writeFileSync(routes.src.views + '/crp-styles/' + filename + '.html.twig', styles);
+                    fs.writeFileSync(routes.src.markup + '/crp-styles/' + filename + '.twig', styles);
                 } else {
                     fn.consoleLog(file_path + ' does not exists', 'fuck');
                 }

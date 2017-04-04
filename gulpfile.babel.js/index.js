@@ -62,4 +62,4 @@ gulp.task('serve', (callback) => {
  * Task: Watch
  * Main task to run all watch tasks
  */
-gulp.task('watch', ['images:watch', 'styles:watch', 'scripts:watch'])
+gulp.task('watch', ['images:watch', 'styles:watch', 'scripts:watch', 'markup:watch'])

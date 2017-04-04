@@ -3,12 +3,13 @@
 module.exports = {
     src: {
         base: 'src',
+        data: 'src/data',
         fonts: 'src/assets/fonts',
         img: 'src/assets/img',
         js: 'src/assets/js',
         sprites: 'src/assets/img/sprites',
         scss: 'src/assets/scss',
-        views: 'src/views'
+        markup: 'src/markup'
     },
     dist: {
         base: 'dist',
