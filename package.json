@@ -1,12 +1,12 @@
 {
-  "name": "archetype-symfony",
-  "version": "3.0.0",
-  "description": "Runroom Symfony archetype",
+  "name": "archetype-landings",
+  "version": "1.0.0",
+  "description": "Runroom Landings Archetype",
   "author": "@runroom",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:runroom/archetype-symfony.git"
+    "url": "git@bitbucket.org:runroom/archetype-landigns.git"
   },
   "private": true,
   "scripts": {},

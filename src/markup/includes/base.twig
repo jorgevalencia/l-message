@@ -1,5 +1,6 @@
-{% set locale = app.request.locale %}
-{% set model = page.content %}
+{% set path_images = path.images %}
+{% set path_styles = path.styles %}
+{% set path_scripts = path.scripts %}
 
 <!doctype html>
 <html>
@@ -42,13 +43,13 @@
             {% include '../organisms/footer.twig' %}
         {% endblock %}
 
-        <link rel="stylesheet" href="assets/css/styles.min.css" />
+        <link rel="stylesheet" href="{{ path_styles }}styles.min.css" />
 
         {% block styles %}{% endblock %}
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-        <script src="assets/js/app.min.js" async defer></script>
+        <script src="{{ path_scripts }}app.min.js" async defer></script>
 
         {% block scripts %}{% endblock %}
 

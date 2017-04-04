@@ -1,12 +1,3 @@
-path:
-    images: '/assets/img/'
-    styles: '/assets/css/'
-    scripts: '/assets/js/'
-
-landing:
-    data:
-        test: 'test'
-
 metas:
     title: 'Archetype Landings'
     description: 'description'

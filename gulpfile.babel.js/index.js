@@ -21,6 +21,7 @@ fs.readdirSync('./gulpfile.babel.js/tasks').filter((file) => {
  */
 gulp.task('build', (callback) => {
     runSequence(
+        'markup',
         'images',
         'styles',
         'scripts',
